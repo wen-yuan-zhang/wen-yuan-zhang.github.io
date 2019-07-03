@@ -1,0 +1,90 @@
+/* body */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+
+/* header */
+header {
+    /* display: block; */
+} 
+div.headerpicture {
+    height: 340px;
+    position: relative;
+    margin: 0 0;
+    padding: 0 0;
+    background-image: url("../resources/headpicture.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+div.headtitle {
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 30px;
+}
+div.headtitle .maintitle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+}
+div.headtitle .subtitle {
+    font-family:  '楷体', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+}
+
+
+/* main */
+main {
+    display: block; 
+}
+main table {
+    font-family: '微软雅黑', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 6px;
+    width: 50%;
+}
+main table a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+main table a:hover {
+    color: silver;
+}
+main table a:focus {
+    color: gray;
+}
+main div {
+    width: 50%;
+    margin: 0 auto;
+}
+main h1 {
+    letter-spacing: 2px;
+    color: aliceblue;
+    font-size: 35px;
+    font-family: '微软雅黑', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main p {
+    line-height: 2em;
+    color: gainsboro;
+    font-size: 20px;
+    font-family: '楷体', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/* foot */
+footer .ending {
+    font-family: '微软雅黑', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: darkgray;
+    text-align: center;
+}
