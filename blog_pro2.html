@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>zParquet's Blog</title>
+        <link rel="stylesheet" href="css/blogs.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class='headerpicture'>
+                <div class='headtitle'>
+                    <p class='maintitle'>zParquet's Blog</p>
+                    <p class='subtitle'>张文源的博客</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <hr width="50%" color="silver" />
+            <table align="center">
+                <tr>
+                    <td style='border-right: 1px solid silver;'><a href='http://zparquet.github.io'>主页</a></td>
+                    <td style='border-right: 1px solid silver;'><a href='aboutMe.html'>关于</a></td>
+                    <td style='border-right: 1px solid silver;'><a href='blogs.html'>日志</a></td>
+                    <td><a href='#hrefs'>链接</a></td>
+                </tr>
+            </table>
+            <hr width="50%" color="silver" />
+            <br />
+            <br />
+            <div>
+                <h1 align='center'>
+                    实验2技术文档
+                </h1>
+                <h2 align='center'>
+                    前端小学期第2次基础实验技术文档
+                </h2>
+                <p>
+                    &nbsp&nbsp 本次实验一共有5道编程题，难度从易到难，最开始的几道题相当于用来熟练javascipt的基本接口等操作，后面的题更多地融入了编程思维和技能的考察。下面逐一看一看这几道题：
+                </p>
+                <h3>
+                    第一题：DDL
+                </h3>
+                <p class='description'>
+                    <b>问题描述：</b>
+                </p>
+                <p class='description'>
+                    &nbsp&nbsp&nbsp&nbsp TA想知道同学们是不是都按时提交了作业；同时TA还想知道延期的同学们具体延期了多少天，据此计算出同学们作业的最终分数。请你编写⼀个JS函数来帮助TA完成这项⼯作。具体来说，你需要实现⼀个函数 datetimeSort。这个函数接受两个参数，第⼀个参数为形如(yyyy-MM-ddHH:mm:ss)的datetime格式字符串（表示DDL的时间戳），第⼆个参数为datetime格式的字符串数组。 datetimeSort 函数返回⼀个数组，其中每个元素是⼀个对象，拥有两个字段：datetime字段是从输⼊中获取的提交时间datetime字符串，lateDays字段是超过DDL的天数。<br />
+                    &nbsp&nbsp&nbsp&nbsp 要求你对第⼆个参数数组中的所有datetime进⾏升序排序，并且判断每个datetime是否超过了DDL，计算超过DDL的天数lateDays。如果没有超过DDL，则记为0。 你需要将结果按照排序的顺序组织成符合返回要求的数组作为函数的返回值。
+                </p>
+                <p class='description'>
+                    <b>输入输出样例</b>
+                </p>
+                <p class='description'>
+                    <b>输入</b>
+                </p>
+                <p class='displayCode'>
+                    datetimeSort('2018-05-05 11:22:33', ['2018-05-04 11:22:33', '2017-05-05 11:22:33', '2018-05-05 11:22:33','2018-05-06 11:22:32','2018-05-06 11:22:33'])
+                </p>
+                <p class='description'>
+                    <b>输出</b>
+                </p>
+                <p class='displayCode'>
+                    [{datetime:'2017-05-05 11:22:33, lateDays:0}，{datetime:'2018-05-04 11:22:33', lateDays:0}，{datetime:'2018-05-05 11:22:33', lateDays:0}，{datetime:'2018-05-06 11:22:32', lateDays:1}，{datetime:'2018-05-06 11:22:33', lateDays:2}]
+                </p>
+                <p class='analysis'>
+                    这道题要求计算时间差，我们可以调用javascript内置的Date类来完成。由于题目中输入的字符串都是符合Date格式的，因此可以直接用输入的字符串去初始化Date对象，调用两个对象的Date.getTime()方法获得两个对象的毫秒数（绝对时间），相减得到毫秒量级的时间差，再转换成天数即可。注意到如果毫秒差为负，说明时间在DDL之前，所以要把lateDays设置为1。同时注意题中如果正好差了一天（DDL规定的时间+24小时整），lateDays是算作2的。
+                </p>
+
+                <h3>
+                    第二题：迭代器
+                </h3>
+                <p class='description'>
+                    <b>问题描述：</b>
+                </p>
+                <p class='description'>
+                    &nbsp&nbsp&nbsp&nbsp 请实现⼀个 TreeIterator 类，完成多叉树的先序遍历，对外提供迭代器接⼝。<br />
+                    &nbsp&nbsp&nbsp&nbsp 你的 TreeIterator 类的构造函数应接受⼀个参数，为可能取值 null 的 JavaScript 对象，表示多叉树的根节点。该值取 null 表示空树；⾮ null的每⼀个节点有 val 和 children 两个字段：val 的取值是⼀个整数，children是⼀个数组，其中依次包含了该节点的所有⼦节点。叶⼦节点的 children 为 [ ]。<br />
+                    &nbsp&nbsp&nbsp&nbsp 你的 TreeIterator 类应当实现 has_next 和 next_value ⽅法来使得评测程序对你的 TreeIterator 类能够正确调⽤。其中has_next ⽅法返回布尔类型，表示是否还有下⼀个元素，相当于 C++ ⻛格迭代器中end()的⽐较；next_value ⽅法返回下⼀个元素，相当于 C++ ⻛格迭代器中解引⽤、然后步进 1 个元素。值得注意的是 has_next ⽅法不应有副作⽤，也即连续多次调⽤ has_next 应与只调⽤⼀次等价。
+                </p>
+                <p class='description'>
+                    <b>输入输出样例</b>
+                </p>
+                <p class='description'>
+                    <b>输入</b>
+                </p>
+                <p class='displayCode'>
+                    <span class='comment'>
+                        //定义树
+                    </span>
+                    <br />
+                    const tree = {
+                        val: 1,
+                        children: [
+                        {
+                        val: 2,
+                        children : []
+                        },
+                        {
+                        val: 3,
+                        children : [
+                        {
+                        val: 4,
+                        children : []
+                        }
+                        ]},
+                        {
+                        val: 5,
+                        children : []
+                        },
+                        ]
+                    };
+                    <br />
+                    <span class='comment'>
+                        //测试
+                    </span>
+                    <br />
+                    const iterator = new TreeIterator(tree); <br />
+                    while(iterator.has_next()){
+                    console.log(iterator.next_value());
+                    }
+                </p>
+                <p class='description'>
+                    <b>输出</b>
+                </p>
+                <p class='displayCode'>
+                    1 2 3 4 5
+                </p>
+                <p class='analysis'>
+                    这道题需要借助ES6的Generator特性和yield关键字来实现。首先我们为类定义一个tree属性，属性值等于输入的树。定义一个函数function* generate(tree)来进行树的解析，一边解析一边使用yield来生成元素。具体方法是，对每一个节点，首先yield tree.var来生成该节点的var值，然后看节点的children属性，如果children不为空，就对children的每一个子节点继续调用generate函数进行yield，由于这里是递归调用所以要使用yield*关键字，即yield* generate(child)，这样把树遍历一遍后，就获得了所有要生成的元素。
+                </p>
+                <p class='analysis'>
+                    再为TreeIterator类定义一个iter属性，该属性永远指向tree.next().在has_next()方法里，查看iter的done值，如果done值等于true，说明已经没有下一个元素，则has_next()返回false，否则返回true；在next_value()方法中，首先返回iter的value值，也就是当前指向的下一个元素值，再对iter求next()，使iter属性指向它的下一个位置。
+                </p>
+                
+                <h3>
+                    第三题：fmap
+                </h3>
+                <p class='description'>
+                    <b>问题描述：</b>
+                </p>
+                <p class='description'>
+                    &nbsp&nbsp&nbsp&nbsp 请实现⼀个fmap函数，该函数能够递归地进⾏处理数组中的数组元素，将传⼊的⽅法应⽤于其中的每⼀个原⼦元素上。fmap函数应该接受两个参数：第⼀个参数是⼀个函数⽅法f，f接受⼀个类型为int的参数并具有返回值；第⼆个参数是⼀个嵌套数组，所有原⼦元素类型都是int。你的fmap函数应该能够正确返回同样结构的数组，其中每⼀个原⼦元素都是原有原⼦元素传⼊f函数处理后的结果。
+                </p>
+                <p class='description'>
+                    <b>输入输出样例</b>
+                </p>
+                <p class='description'>
+                    <b>输入</b>
+                </p>
+                <p class='displayCode'>
+                    fmap(function(i){ return i*2; }, [1,[2,3,[4]],[5,[6]],[]]);
+                </p>
+                <p class='description'>
+                    <b>输出</b>
+                </p>
+                <p class='displayCode'>
+                    [2,[4,6,[8]],[10,[12]],[]]
+                </p>
+                <p class='analysis'>
+                    这道题同样是需要迭代求解。首先第一层是遍历列表中的所有元素，如果某一个元素的长度大于1，说明这个元素也是一个列表，因此把这个元素取出来，对它继续调用fmap求解。
+                </p>
+                <p class='analysis'>
+                    如果某一个元素的长度等于1，不能直接对它应用传入的function（这也是本道题最容易犯错的地方），首先需要判断一下是否为列表嵌套的情况，比如'[[]]', '[[[2]]]'。因为如果是列表里面套了一个空列表，长度同样为1，但如果想访问里面的数据就会出错。判断方法是取里面的元素查看类型，如果是'number'就可以放心地直接扔到function里面执行计算，如果是'Object'就要继续进入这个元素，直到遍历至最深层，如果是'null'则直接返回，如果是'number'就执行function的计算。
+                    如果某一个元素的长度等于0，说明是'[]'的情况，直接返回即可。
+                </p>
+
+                <h3>
+                    第四题：运算符定义
+                </h3>
+                <p class='description'>
+                    <b>问题描述：</b>
+                </p>
+                <p class='description'>
+                    &nbsp&nbsp&nbsp&nbsp 请实现⼀个operatorDefinition函数，函数接受两个参数的输⼊，第⼀个参数是字符串表示的运算符定义语句，第⼆参数使⽤字符串表示的仅包含运算符&与括号的表达式，要求返回按照运算符定义所计算的表达式的字符串结果。<br />
+                    &nbsp&nbsp&nbsp&nbsp 运算符定义语句规则：运算符记为&；运算符是⼀个⻓度为3的字符串，其定义可能会使⽤到且仅可能会⽤到：⼀个运算符：+、-、*、/四个运算符中的⼀个，它们全部是表示整数运算；两个变量：x和y，x表示第⼀个参数，y表示第⼆个参数。
+                </p>
+                <p class='description'>
+                    <b>输入输出样例</b>
+                </p>
+                <p class='description'>
+                    <b>输入</b>
+                </p>
+                <p class='displayCode'>
+                    operatorDefinition('y/x', '4&((2&4)&43)');
+                </p>
+                <p class='description'>
+                    <b>输出</b>
+                </p>
+                <p class='displayCode'>
+                    "5"
+                </p>
+                <p class='analysis'>
+                    由于这里只有一种操作符&和一种括号"()"，所以不需要像复杂的四则运算表达式那样先化成后缀式再用栈来实现，有一个比较方便的方法是利用正则表达式的搜索和替换。描述如下：
+                </p>
+                <p class='analysis'>
+                    每次找到一个形如"数字+&+数字"的串，找到之后用split函数切成两个数字，然后把这两个数字根据&的定义进行计算得到一个新的数字，用这个新数字去替换之前匹配到的串；之后每次找到一个空的括号"()"，直接在原字符串中删掉这个括号。上述两个步骤交替进行，直到某一次循环既没有找到"数字+&+数字"的串又没有找到"()"，说明此时只剩下了一个最终的计算结果，将该计算结果返回即可。
+                </p>
+                <p class='analysis'>
+                    这种方法巧妙地利用运算顺序的规律，由于表达式有括号的参与，所以每次计算只能计算"数字&数字"这样形式的串，然后脱去括号，迭代地进行这样的计算。因此我们可以每次都用正则表达式直接找出这种格式的串进行计算，并不断地脱去空括号，最终得到结果。
+                </p>
+
+            </div>
+        </main>
+        <footer>
+                <br />
+                <br />
+                <br />
+                <hr width="50%" color="silver" />
+                <br />
+                <table align="center" cellspacing='15px' cellpadding='15px' >
+                    <tr>
+                        <td><a href='https://github.com/zParquet' target="_blank" name='hrefs'><img src="resources/github.jpg" /></a></td>
+                        <td><a href='https://weibo.com/6117683942/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1' target='_blank'><img src="resources/weibo.jpg" /></a></td>
+                        <td><a href='https://space.bilibili.com/168012084?spm_id_from=333.788.b_765f7570696e666f.1' target="_blank"><img src="resources/bilibili.jpg" /></a></td>
+                    </tr>
+                </table>
+                <p class='ending'>
+                    版权所有@2019 张文源
+                </p>
+        </footer>
+    </body>
+</html>

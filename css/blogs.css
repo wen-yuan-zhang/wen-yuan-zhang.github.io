@@ -66,6 +66,9 @@ main table a:focus {
 main div {
     width: 50%;
     margin: 0 auto;
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    padding: 15px;
 }
 main h1 {
     letter-spacing: 2px;
@@ -73,13 +76,45 @@ main h1 {
     font-size: 35px;
     font-family: '微软雅黑', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+main h2 {
+    letter-spacing: 1px;
+    color: azure;
+    font-size: 23px;
+    font-family: '微软雅黑', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main h3 {
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: '微软雅黑', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 main p {
-    line-height: 2em;
+    line-height: 1.5em;
     color: gainsboro;
     font-size: 20px;
     font-family: '楷体', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+main p.description {
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: whitesmoke;
+    font-family: '微软雅黑', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main p.displayCode {
+    line-height: 1.5em;
+    border-radius: 7px;
+    background-color: rgb(209,227,237);
+    font-size: 15px;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    color: rgb(4,2,75);
+    padding: 7px 15px;
+}
+main span.comment {
+    color: green;
+}
+main p.analysis {
+    text-indent: 2em;
+}
 
 /* foot */
 footer .ending {
