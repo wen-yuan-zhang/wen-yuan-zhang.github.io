@@ -115,6 +115,9 @@ main span.comment {
 main p.analysis {
     text-indent: 2em;
 }
+main p.content {
+    text-indent: 2em;
+}
 
 /* foot */
 footer .ending {
