@@ -34,7 +34,7 @@
                 <name>Wenyuan Zhang | 张文源</name>
               </p>
               <p>
-                I am currently a third-year Ph.D student in <a href="https://www.thss.tsinghua.edu.cn/">School of Software</a>, <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>, advised by Prof. <a href="https://yushen-liu.github.io/">Yu-Shen Liu</a>.
+                I am currently a fourth-year Ph.D student in <a href="https://www.thss.tsinghua.edu.cn/">School of Software</a>, <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>, advised by Prof. <a href="https://yushen-liu.github.io/">Yu-Shen Liu</a>.
                 I got my bachelor's degree from <a href="https://www.thss.tsinghua.edu.cn/">School of Software</a>, <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a> in 2021.
               </p>
               <p>
@@ -114,10 +114,58 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
-          <tr onmouseout="UDiFF_stop()" onmouseover="UDiFF_start()">
+          <tr onmouseout="GSPull_stop()" onmouseover="GSPull_start()">
             <td width="28%">
               <div class="one">
-                <div class="two" id="UDiFF" style="opacity: 0;">
+                <!-- <div class="two" id="GSPull" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/VRP_eccv24_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div> -->
+                <img src="media/GSPull_nips24.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function GSPull_start() {
+                  document.getElementById('GSPull').style.opacity = "1";
+                }
+                function GSPull_stop() {
+                  document.getElementById('GSPull').style.opacity = "0";
+                }
+                GSPull_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="">
+                <papertitle>Neural Signed Distance Function Inference through Splatting 3D Gaussians Pulled on Zero-Level Set
+                </papertitle>
+              </a>
+              <br>
+              <strong>Wenyuan Zhang</strong>,<a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
+              <br>
+              <em>Advances in Neural Information Processing Systems <b>(NeurIPS)</b></em>, 2024
+              <br>
+              <!-- <a href="https://wen-yuan-zhang.github.io/VolumeRenderingPriors/">project page</a> |             
+              <a href="https://arxiv.org/abs/2407.16396">arXiv</a> |
+              <a href="https://github.com/wen-yuan-zhang/VolumeRenderingPriors">code</a> -->
+        
+              <p align="justify", style="font-size:13px">
+                We propose a method that seamlessly merge 3DGS with the learning of neural SDFs. To this end, we dynamically align 3D Gaussians on the zero-level set of the neural SDF. Meanwhile, we update the neural SDF by pulling neighboring space to the pulled 3D Gaussians, which progressively refine the signed distance field near the surface.
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
+          <tr onmouseout="VRPNeRF_stop()" onmouseover="VRPNeRF_start()">
+            <td width="28%">
+              <div class="one">
+                <div class="two" id="VRPNeRF" style="opacity: 0;">
                   <video width="225" muted="" autoplay="" loop="">
                     <source src="media/VRP_eccv24_after.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -128,13 +176,13 @@
               </div>
         
               <script type="text/javascript">
-                function UDiFF_start() {
-                  document.getElementById('UDiFF').style.opacity = "1";
+                function VRPNeRF_start() {
+                  document.getElementById('VRPNeRF').style.opacity = "1";
                 }
-                function UDiFF_stop() {
-                  document.getElementById('UDiFF').style.opacity = "0";
+                function VRPNeRF_stop() {
+                  document.getElementById('VRPNeRF').style.opacity = "0";
                 }
-                UDiFF_stop()
+                VRPNeRF_stop()
               </script>
             </td>
         
@@ -168,11 +216,11 @@
               <div class="one">
                 <div class="two" id="VP2P" style="opacity: 0;">
                   <video width="225" muted="" autoplay="" loop="">
-                    <source src="media/VP2PMatching_nips24_after.mp4" type="video/mp4">
+                    <source src="media/VP2PMatching_nips23_after.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                <img src="media/VP2PMatching_nips24_before.png" width="225">
+                <img src="media/VP2PMatching_nips23_before.png" width="225">
       
               </div>
 
@@ -282,7 +330,7 @@
                 <heading>Academic Services</heading>
                 <ul>
                   <li> 
-                    <strong>Conference Reviewer</strong>: NeurIPS-2025, IJCAI-2024
+                    <strong>Conference Reviewer</strong>: ICLR-25, WACV-25, NeurIPS-24, IJCAI-24
                   </li>
                   
 
