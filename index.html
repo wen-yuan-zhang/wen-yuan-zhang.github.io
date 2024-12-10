@@ -114,6 +114,54 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
+          <tr onmouseout="Sparis_stop()" onmouseover="Sparis_start()">
+            <td width="28%">
+              <div class="one">
+                <!-- <div class="two" id="Sparis" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/VRP_eccv24_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div> -->
+                <img src="media/Sparis_aaai25.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function Sparis_start() {
+                  document.getElementById('Sparis').style.opacity = "1";
+                }
+                function Sparis_stop() {
+                  document.getElementById('Sparis').style.opacity = "0";
+                }
+                Sparis_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="">
+                <papertitle>Sparis: Neural Implicit Surface Reconstruction of Indoor Scenes from Sparse Views
+                </papertitle>
+              </a>
+              <br>
+              <a href="https://yulunwu0108.github.io/">Yulun Wu*</a>, Han Huang*, <strong>Wenyuan Zhang</strong>, Chao Deng, Ge Gao, Ming Gu, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>
+              <br>
+              <em>AAAI Conference on Artificial Intelligence <b>(AAAI)</b></em>, 2025
+              <!-- <br> -->
+              <!-- <a href="https://wen-yuan-zhang.github.io/GS-Pull/">project page</a> |             
+              <a href="https://arxiv.org/abs/2410.14189">arXiv</a> 
+              <a href="https://github.com/wen-yuan-zhang/GS-Pull">code</a> -->
+        
+              <p align="justify", style="font-size:13px">
+                We propose a method that introduces a novel prior based on inter-image matching information for indoor surface reconstruction from sparse views.
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
           <tr onmouseout="GSPull_stop()" onmouseover="GSPull_start()">
             <td width="28%">
               <div class="one">
@@ -150,7 +198,7 @@
               <br>
               <a href="https://wen-yuan-zhang.github.io/GS-Pull/">project page</a> |             
               <a href="https://arxiv.org/abs/2410.14189">arXiv</a> 
-              <!-- <a href="https://github.com/wen-yuan-zhang/VolumeRenderingPriors">code</a> -->
+              <a href="https://github.com/wen-yuan-zhang/GS-Pull">code</a>
         
               <p align="justify", style="font-size:13px">
                 We propose a method that seamlessly merge 3DGS with the learning of neural SDFs. To this end, we dynamically align 3D Gaussians on the zero-level set of the neural SDF. Meanwhile, we update the neural SDF by pulling neighboring space to the pulled 3D Gaussians, which progressively refine the signed distance field near the surface.
