@@ -114,6 +114,102 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
+          <tr onmouseout="MonoInstance_stop()" onmouseover="MonoInstance_start()">
+            <td width="28%">
+              <div class="one">
+                <div class="two" id="MonoInstance" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/MonoInstance_cvpr25_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="media/MonoInstance_cvpr25_before.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function MonoInstance_start() {
+                  document.getElementById('MonoInstance').style.opacity = "1";
+                }
+                function MonoInstance_stop() {
+                  document.getElementById('MonoInstance').style.opacity = "0";
+                }
+                MonoInstance_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="">
+                <papertitle>MonoInstance: Enhancing Monocular Priors via Multi-view Instance Alignment for Neural Rendering and Reconstruction
+                </papertitle>
+              </a>
+              <br>
+              <strong>Wenyuan Zhang</strong>, Yixiao Yang, Han Huang, Liang Han, Kanle Shi, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
+              <br>
+              <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition <b>(CVPR)</b></em>, 2025
+              <br>
+              <!-- <a href="https://wen-yuan-zhang.github.io/NeRFPrior/">project page</a> |             
+              <a href="https://arxiv.org/abs/2501.01196">arXiv</a> |
+              <a href="https://github.com/yulunwu0108/Sparis">code</a> -->
+        
+              <p align="justify", style="font-size:13px">
+                we propose a general approach that explores the uncertainty of monocular depths to provide enhanced geometric priors for neural rendering and reconstruction. 
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
+          <tr onmouseout="NeRFPrior_stop()" onmouseover="NeRFPrior_start()">
+            <td width="28%">
+              <div class="one">
+                <div class="two" id="NeRFPrior" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/NeRFPrior_cvpr25_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="media/NeRFPrior_cvpr25_before.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function NeRFPrior_start() {
+                  document.getElementById('NeRFPrior').style.opacity = "1";
+                }
+                function NeRFPrior_stop() {
+                  document.getElementById('NeRFPrior').style.opacity = "0";
+                }
+                NeRFPrior_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="">
+                <papertitle>NeRFPrior: Learning Neural Radiance Field as a Prior for Indoor Scene Reconstruction
+                </papertitle>
+              </a>
+              <br>
+              <strong>Wenyuan Zhang</strong>, <a href="https://emily-jia.github.io/personal-web//">Emily Yue-ting Jia</a>, <a href="https://junshengzhou.github.io/">Junsheng Zhou</a>, <a href="https://mabaorui.github.io/">Baorui Ma</a>, Kanle Shi, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
+              <br>
+              <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition <b>(CVPR)</b></em>, 2025
+              <br>
+              <!-- <a href="https://wen-yuan-zhang.github.io/NeRFPrior/">project page</a> |             
+              <a href="https://arxiv.org/abs/2501.01196">arXiv</a> |
+              <a href="https://github.com/yulunwu0108/Sparis">code</a> -->
+        
+              <p align="justify", style="font-size:13px">
+                We present NeRFPrior, which adopts a neural radiance field as a prior to learn signed distance fields using volume rendering for indoor scene surface reconstruction. 
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
           <tr onmouseout="Sparis_stop()" onmouseover="Sparis_start()">
             <td width="28%">
               <div class="one">
@@ -146,7 +242,7 @@
               <br>
               <a href="https://yulunwu0108.github.io/">Yulun Wu*</a>, Han Huang*, <strong>Wenyuan Zhang</strong>, Chao Deng, Ge Gao, Ming Gu, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>
               <br>
-              <em>AAAI Conference on Artificial Intelligence <b>(AAAI)</b></em>, 2025
+              <em>AAAI Conference on Artificial Intelligence <b>(AAAI)</b></em>, 2025 (<strong><span style="color:#ff0000;">Oral</span></strong>)
               <br>
               <a href="https://yulunwu0108.github.io/Sparis/">project page</a> |             
               <a href="https://arxiv.org/abs/2501.01196">arXiv</a> |
@@ -415,9 +511,9 @@
               <br>
               <p align="right">
                 <font size="2">
-                template adapted from <a href="https://jonbarron.info/"><font size="2">this awesome website</font></a>
+                template adapted from <a href="https://junshengzhou.github.io/"><font size="2">this awesome website</font></a>
                 <br>
-                Last updated: July 2024
+                Last updated: March 2025
                 <br>
                 
               </font>
