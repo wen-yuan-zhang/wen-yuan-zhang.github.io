@@ -38,7 +38,7 @@
                 I got my bachelor's degree from <a href="https://www.thss.tsinghua.edu.cn/">School of Software</a>, <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a> in 2021.
               </p>
               <p>
-                My research interests lie in the area of 3D computer vision and graphics, especially in multi-view neural rendering, 3D reconstruction and scene understanding. 
+                My research interests lie in the area of computer vision and graphics, including multi-view neural rendering, 3D reconstruction and video generation. 
               </p>
               <p style="text-align:center">
                 <a href="mailto:zhangwen21@mails.tsinghua.edu.cn">Email</a> &nbsp/&nbsp
@@ -114,54 +114,6 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
-          <tr onmouseout="MonoInstance_stop()" onmouseover="MonoInstance_start()">
-            <td width="28%">
-              <div class="one">
-                <div class="two" id="MonoInstance" style="opacity: 0;">
-                  <video width="225" muted="" autoplay="" loop="">
-                    <source src="media/MonoInstance_cvpr25_after.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-                <img src="media/MonoInstance_cvpr25_before.png" width="225">
-        
-              </div>
-        
-              <script type="text/javascript">
-                function MonoInstance_start() {
-                  document.getElementById('MonoInstance').style.opacity = "1";
-                }
-                function MonoInstance_stop() {
-                  document.getElementById('MonoInstance').style.opacity = "0";
-                }
-                MonoInstance_stop()
-              </script>
-            </td>
-        
-            <td width="65%" valign="top">
-              <a href="https://wen-yuan-zhang.github.io/MonoInstance/">
-                <papertitle>MonoInstance: Enhancing Monocular Priors via Multi-view Instance Alignment for Neural Rendering and Reconstruction
-                </papertitle>
-              </a>
-              <br>
-              <strong>Wenyuan Zhang</strong>, Yixiao Yang, <a href="https://github.com/alvin528">Han Huang</a>, <a href="https://github.com/hanl2010">Liang Han</a>, Kanle Shi, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
-              <br>
-              <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition <b>(CVPR)</b></em>, 2025
-              <br>
-              <a href="https://wen-yuan-zhang.github.io/MonoInstance/">project page</a> |            
-              <a href="https://arxiv.org/abs/2503.18363">arXiv</a>
-              <!-- <a href="https://github.com/yulunwu0108/Sparis">code</a> -->
-        
-              <p align="justify", style="font-size:13px">
-                we propose a general approach that explores the uncertainty of monocular depths to provide enhanced geometric priors for neural rendering and reconstruction. 
-              </p>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tbody>
           <tr onmouseout="NeRFPrior_stop()" onmouseover="NeRFPrior_start()">
             <td width="28%">
               <div class="one">
@@ -192,7 +144,7 @@
                 </papertitle>
               </a>
               <br>
-              <strong>Wenyuan Zhang</strong>, <a href="https://emily-jia.github.io/personal-web//">Emily Yue-ting Jia</a>, <a href="https://junshengzhou.github.io/">Junsheng Zhou</a>, <a href="https://mabaorui.github.io/">Baorui Ma</a>, Kanle Shi, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
+              <strong>Wenyuan Zhang</strong>, <a href="https://emily-jia.github.io/personal-web//">Emily Yue-ting Jia</a>, <a href="https://junshengzhou.github.io/">Junsheng Zhou</a>, <a href="https://mabaorui.github.io/">Baorui Ma</a>, <a href="https://openreview.net/profile?id=%7EKanle_Shi2">Kanle Shi</a>, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
               <br>
               <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition <b>(CVPR)</b></em>, 2025 (<strong><span style="color:#ff0000;">Highlight</span></strong>)
               <br>
@@ -202,6 +154,54 @@
         
               <p align="justify", style="font-size:13px">
                 We present NeRFPrior, which adopts a neural radiance field as a prior to learn signed distance fields using volume rendering for indoor scene surface reconstruction. 
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
+          <tr onmouseout="MonoInstance_stop()" onmouseover="MonoInstance_start()">
+            <td width="28%">
+              <div class="one">
+                <div class="two" id="MonoInstance" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/MonoInstance_cvpr25_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="media/MonoInstance_cvpr25_before.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function MonoInstance_start() {
+                  document.getElementById('MonoInstance').style.opacity = "1";
+                }
+                function MonoInstance_stop() {
+                  document.getElementById('MonoInstance').style.opacity = "0";
+                }
+                MonoInstance_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="https://wen-yuan-zhang.github.io/MonoInstance/">
+                <papertitle>MonoInstance: Enhancing Monocular Priors via Multi-view Instance Alignment for Neural Rendering and Reconstruction
+                </papertitle>
+              </a>
+              <br>
+              <strong>Wenyuan Zhang</strong>, Yixiao Yang, <a href="https://github.com/alvin528">Han Huang</a>, <a href="https://github.com/hanl2010">Liang Han</a>, <a href="https://openreview.net/profile?id=%7EKanle_Shi2">Kanle Shi</a>, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
+              <br>
+              <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition <b>(CVPR)</b></em>, 2025
+              <br>
+              <a href="https://wen-yuan-zhang.github.io/MonoInstance/">project page</a> |            
+              <a href="https://arxiv.org/abs/2503.18363">arXiv</a>
+              <!-- <a href="https://github.com/yulunwu0108/Sparis">code</a> -->
+        
+              <p align="justify", style="font-size:13px">
+                we propose a general approach that explores the uncertainty of monocular depths to provide enhanced geometric priors for neural rendering and reconstruction. 
               </p>
             </td>
           </tr>
@@ -240,7 +240,7 @@
                 </papertitle>
               </a>
               <br>
-              <a href="https://yulunwu0108.github.io/">Yulun Wu*</a>, Han Huang*, <strong>Wenyuan Zhang</strong>, Chao Deng, Ge Gao, Ming Gu, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>
+              <a href="https://yulunwu0108.github.io/">Yulun Wu*</a>, <a href="https://github.com/alvin528">Han Huang*</a>, <strong>Wenyuan Zhang</strong>, Chao Deng, Ge Gao, Ming Gu, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>
               <br>
               <em>AAAI Conference on Artificial Intelligence <b>(AAAI)</b></em>, 2025 (<strong><span style="color:#ff0000;">Oral</span></strong>)
               <br>
@@ -336,7 +336,7 @@
                 </papertitle>
               </a>
               <br>
-              <strong>Wenyuan Zhang</strong>, Kanle Shi, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
+              <strong>Wenyuan Zhang</strong>, <a href="https://openreview.net/profile?id=%7EKanle_Shi2">Kanle Shi</a>, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
               <br>
               <em>European Conference on Computer Vision <b>(ECCV)</b></em>, 2024
               <br>
@@ -432,7 +432,7 @@
               </a>
               <br>
               <strong>Wenyuan Zhang</strong>, Ruofan Xing</a>, <a href="https://yunfan.zone/">Yunfan Zeng</a>,
-              <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, Kanle Shi, <a href="https://h312h.github.io/">Zhizhong Han</a>
+              <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://openreview.net/profile?id=%7EKanle_Shi2">Kanle Shi</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
               <br>
               <em>IEEE Transactions on Image Processing <b>(TIP)</b></em>, 2023
               <br>
@@ -513,7 +513,7 @@
                 <font size="2">
                 template adapted from <a href="https://junshengzhou.github.io/"><font size="2">this awesome website</font></a>
                 <br>
-                Last updated: May 2025
+                Last updated: June 2025
                 <br>
                 
               </font>
