@@ -114,6 +114,54 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
+          <tr onmouseout="GAP_stop()" onmouseover="GAP_start()">
+            <td width="28%">
+              <div class="one">
+                <!-- <div class="two" id="GAP" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/GAP_cvpr25_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div> -->
+                <img src="media/GAP_iccv25.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function GAP_start() {
+                  document.getElementById('GAP').style.opacity = "1";
+                }
+                function GAP_stop() {
+                  document.getElementById('GAP').style.opacity = "0";
+                }
+                GAP_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="https://wen-yuan-zhang.github.io/">
+                <papertitle>GAP: Gaussianize Any Point Clouds with Text Guidance
+                </papertitle>
+              </a>
+              <br>
+              <a href="https://weiqi-zhang.github.io/">Weiqi Zhang*</a>, <a href="https://junshengzhou.github.io/">Junsheng Zhou*</a>, Haotian Geng*, <strong>Wenyuan Zhang</strong>, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>
+              <br>
+              <em>Proceedings of the IEEE/CVF International Conference on Computer Vision <b>(ICCV)</b></em>, 2025
+              <br>
+              <!-- <a href="https://wen-yuan-zhang.github.io/NeRFPrior/">project page</a> |        
+              <a href="https://arxiv.org/abs/2503.18361">arXiv</a>
+              <a href="https://github.com/yulunwu0108/Sparis">code</a> -->
+        
+              <p align="justify", style="font-size:13px">
+                We present GAP, which gaussianizes raw point clouds into high-fidelity 3D Gaussians with text guidance via depth-aware diffusion and surface-anchored optimization.
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
           <tr onmouseout="NeRFPrior_stop()" onmouseover="NeRFPrior_start()">
             <td width="28%">
               <div class="one">
@@ -513,7 +561,7 @@
                 <font size="2">
                 template adapted from <a href="https://junshengzhou.github.io/"><font size="2">this awesome website</font></a>
                 <br>
-                Last updated: June 2025
+                Last updated: July 2025
                 <br>
                 
               </font>
