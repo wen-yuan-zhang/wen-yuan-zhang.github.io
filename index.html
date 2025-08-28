@@ -114,6 +114,53 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
+          <tr onmouseout="MIDAS_stop()" onmouseover="MIDAS_start()">
+            <td width="28%">
+              <div class="one">
+                <div class="two" id="MIDAS" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/MIDAS_arxiv25_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="media/MIDAS_arxiv25_before.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function MIDAS_start() {
+                  document.getElementById('MIDAS').style.opacity = "1";
+                }
+                function MIDAS_stop() {
+                  document.getElementById('MIDAS').style.opacity = "0";
+                }
+                MIDAS_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="https://chenmingthu.github.io/midas">
+                <papertitle>MIDAS: Multimodal Interactive Digital-humAn Synthesis via Real-time Autoregressive Video Generation
+                </papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.com/citations?user=eH4ofxMAAAAJ&hl=zh-CN">Ming Chen*</a>, <a href="https://scholar.google.com/citations?user=WhwTrhcAAAAJ&hl=zh-CN">Liyuan Cui*</a>, <strong>Wenyuan Zhang*</strong>, <a href="https://openreview.net/profile?id=~Haoxian_Zhang1">Haoxian Zhang</a>, <a href="https://ieeexplore.ieee.org/author/37085821566">Yan Zhou</a>, <a href="">Xiaohan Li</a>, <a href="https://openreview.net/profile?id=~Xiaoqiang_Liu3">Xiaoqiang Liu</a>, <a href="https://magicwpf.github.io/">Pengfei Wan</a>
+              <br>
+              <em>arXiv:2508.19320</em>, 2025
+              <br>
+              <a href="https://chenmingthu.github.io/midas">project page</a> | 
+              <a href="https://www.arxiv.org/abs/2508.19320">arXiv</a>
+        
+              <p align="justify", style="font-size:13px">
+                We introduce an autoregressive human video generation framework that enables interactive multimodal control and low-latency extrapolation in a streaming manner.
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
           <tr onmouseout="GAP_stop()" onmouseover="GAP_start()">
             <td width="28%">
               <div class="one">
@@ -564,7 +611,7 @@
                 <font size="2">
                 template adapted from <a href="https://junshengzhou.github.io/"><font size="2">this awesome website</font></a>
                 <br>
-                Last updated: July 2025
+                Last updated: August 2025
                 <br>
                 
               </font>
