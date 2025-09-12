@@ -114,6 +114,53 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
+          <tr onmouseout="KlingAvatar_stop()" onmouseover="KlingAvatar_start()">
+            <td width="28%">
+              <div class="one">
+                <div class="two" id="KlingAvatar" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/KlingAvatar_arxiv25_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="media/KlingAvatar_arxiv25_before.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function KlingAvatar_start() {
+                  document.getElementById('KlingAvatar').style.opacity = "1";
+                }
+                function KlingAvatar_stop() {
+                  document.getElementById('KlingAvatar').style.opacity = "0";
+                }
+                KlingAvatar_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="https://klingavatar.github.io/">
+                <papertitle>Kling-Avatar: Grounding Multimodal Instructions for Cascaded Long-Duration Avatar Animation Synthesis
+                </papertitle>
+              </a>
+              <br>
+              <a href="https://yikang98.github.io/">Yikang Ding*</a>, <a>Jiwen Liu</a>*, <strong>Wenyuan Zhang</strong>, <a href="https://zenmoore.github.io/">Zekun Wang</a>, <a href="https://vincenthu19.github.io/">Wentao Hu</a>, <a href="https://scholar.google.com/citations?user=WhwTrhcAAAAJ&hl=zh-CN">Liyuan Cui</a>, <a>Mingming Lao</a>, <a>Yingchao Shao</a>, <a>Hui Liu</a>, <a>Xiaohan Li</a>, <a href="https://scholar.google.com/citations?user=eH4ofxMAAAAJ&hl=zh-CN">Ming Chen</a>, <a href="https://openreview.net/profile?id=~Xiaoqiang_Liu3">Xiaoqiang Liu</a>, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://magicwpf.github.io/">Pengfei Wan</a>
+              <br>
+              <em>Technical Report. arXiv:2509.09595</em>, 2025
+              <br>
+              <a href="https://klingavatar.github.io/">project page</a> | 
+              <a href="https://arxiv.org/abs/2509.09595">arXiv</a>
+        
+              <p align="justify", style="font-size:13px">
+                we introduce Kling-Avatar, a novel framework that unifies multimodal instruction understanding with cascaded long-duration video generation for avatar animation synthesis.
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
           <tr onmouseout="MIDAS_stop()" onmouseover="MIDAS_start()">
             <td width="28%">
               <div class="one">
@@ -146,7 +193,7 @@
               <br>
               <a href="https://scholar.google.com/citations?user=eH4ofxMAAAAJ&hl=zh-CN">Ming Chen*</a>, <a href="https://scholar.google.com/citations?user=WhwTrhcAAAAJ&hl=zh-CN">Liyuan Cui*</a>, <strong>Wenyuan Zhang*</strong>, <a href="https://scholar.google.com.hk/citations?user=r_aOHlQAAAAJ&hl">Haoxian Zhang</a>, <a href="https://ieeexplore.ieee.org/author/37085821566">Yan Zhou</a>, <a href="">Xiaohan Li</a>, <a href="https://github.com/FreemanTom">Songlin Tang</a>, <a href="">Jiwen Liu</a>, <a href="">Borui Liao</a>, <a href="https://harryxd2018.github.io/">Hejia Chen</a>,  <a href="https://openreview.net/profile?id=~Xiaoqiang_Liu3">Xiaoqiang Liu</a>, <a href="https://magicwpf.github.io/">Pengfei Wan</a>
               <br>
-              <em>arXiv:2508.19320</em>, 2025
+              <em>Technical Report. arXiv:2508.19320</em>, 2025
               <br>
               <a href="https://chenmingthu.github.io/milm">project page</a> | 
               <a href="https://www.arxiv.org/abs/2508.19320">arXiv</a>
@@ -611,7 +658,7 @@
                 <font size="2">
                 template adapted from <a href="https://junshengzhou.github.io/"><font size="2">this awesome website</font></a>
                 <br>
-                Last updated: August 2025
+                Last updated: September 2025
                 <br>
                 
               </font>
