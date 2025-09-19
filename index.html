@@ -114,6 +114,53 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
+          <tr onmouseout="MaterialRefGS_stop()" onmouseover="MaterialRefGS_start()">
+            <td width="28%">
+              <div class="one">
+                <div class="two" id="MaterialRefGS" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/MaterialRefGS_neurips25_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="media/MaterialRefGS_neurips25_before.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function MaterialRefGS_start() {
+                  document.getElementById('MaterialRefGS').style.opacity = "1";
+                }
+                function MaterialRefGS_stop() {
+                  document.getElementById('MaterialRefGS').style.opacity = "0";
+                }
+                MaterialRefGS_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="">
+                <papertitle>MaterialRefGS: Reflective Gaussian Splatting with Multi-view Consistent Material Inference
+                </papertitle>
+              </a>
+              <br>
+              <strong>Wenyuan Zhang*</strong>, <a href="https://openreview.net/profile?id=~Jimin_Tang4">Jimin Tang*</a>, <a href="https://weiqi-zhang.github.io/">Weiqi Zhang</a>, <a href="https://scholar.google.com/citations?user=j-cyhzwAAAAJ&hl=en"> Yi Fang</a>, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
+              <br>
+              <em>Advances in Neural Information Processing Systems <b>(NeurIPS)</b></em>, 2025
+              <br>
+              <!-- <a href="https://klingavatar.github.io/">project page</a> | 
+              <a href="https://arxiv.org/abs/2509.09595">arXiv</a> -->
+        
+              <p align="justify", style="font-size:13px">
+                We introduce MaterialRefGS that significantly improves the rendering and reconstruction of reflective scenes in Gaussian Splatting by introducing PBR-based multi-view material consistency constraints and reflection strength prior.
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
           <tr onmouseout="KlingAvatar_stop()" onmouseover="KlingAvatar_start()">
             <td width="28%">
               <div class="one">
@@ -152,7 +199,7 @@
               <a href="https://arxiv.org/abs/2509.09595">arXiv</a>
         
               <p align="justify", style="font-size:13px">
-                we introduce Kling-Avatar, a novel framework that unifies multimodal instruction understanding with cascaded long-duration video generation for avatar animation synthesis.
+                We introduce Kling-Avatar, a novel framework that unifies multimodal instruction understanding with cascaded long-duration video generation for avatar animation synthesis.
               </p>
             </td>
           </tr>
