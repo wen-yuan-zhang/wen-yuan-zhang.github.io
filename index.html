@@ -114,6 +114,54 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
+          <tr onmouseout="VRPUDF_stop()" onmouseover="VRPUDF_start()">
+            <td width="28%">
+              <div class="one">
+                <div class="two" id="VRPUDF" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/VRPUDF_tpami26_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="media/VRPUDF_tpami26_before.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function VRPUDF_start() {
+                  document.getElementById('VRPUDF').style.opacity = "1";
+                }
+                function VRPUDF_stop() {
+                  document.getElementById('VRPUDF').style.opacity = "0";
+                }
+                VRPUDF_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="https://wen-yuan-zhang.github.io/VolumeRenderingPriors">
+                <papertitle>VRP-UDF: Towards Unbiased Learning of Unsigned Distance Functions from Multi-view Images with Volume Rendering Priors
+                </papertitle>
+              </a>
+              <br>
+              <strong>Wenyuan Zhang</strong>, <a href=""> Chunsheng Wan</a>, <a href="">Kanle Shi</a>, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
+              <br>
+              <em>IEEE Transactions on Pattern Analysis and Machine Intelligence <b>(TPAMI)</b></em>, 2026
+              <br>
+              <a href="https://wen-yuan-zhang.github.io/VolumeRenderingPriors/">project page</a> | 
+              <!-- <a href="https://arxiv.org/abs/2510.11387">arXiv</a> | -->
+              <a href="https://github.com/wen-yuan-zhang/VolumeRenderingPriors">code</a>
+        
+              <p align="justify", style="font-size:13px">
+                We introduce a novel differentiable renderer to infer UDFs from multi-view images. We also validate its generalization by extending the learned VRP to diverse neural representations and integrating them into Gaussian Splatting-based surface reconstruction.
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
           <tr onmouseout="MaterialRefGS_stop()" onmouseover="MaterialRefGS_start()">
             <td width="28%">
               <div class="one">
