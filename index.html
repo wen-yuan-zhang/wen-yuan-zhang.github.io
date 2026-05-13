@@ -114,6 +114,54 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
+          <tr onmouseout="VidSplat_stop()" onmouseover="VidSplat_start()">
+            <td width="28%">
+              <div class="one">
+                <div class="two" id="VidSplat" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/VidSplat_siggraph26_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="media/VidSplat_siggraph26_before.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function VidSplat_start() {
+                  document.getElementById('VidSplat').style.opacity = "1";
+                }
+                function VidSplat_stop() {
+                  document.getElementById('VidSplat').style.opacity = "0";
+                }
+                VidSplat_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="https://tangjm24.github.io/VidSplat/">
+                <papertitle>VidSplat: Gaussian Splatting Reconstruction with Geometry-Guided Video Diffusion Priors
+                </papertitle>
+              </a>
+              <br>
+              <a href="https://openreview.net/profile?id=~Jimin_Tang4">Jimin Tang*</a>, <strong>Wenyuan Zhang*</strong>, <a href="https://junshengzhou.github.io/">Junsheng Zhou</a>, <a href="https://github.com/ZZiAnnn">Zian Huang</a>, <a href="">Kanle Shi</a>, <a href="">Shenkun Xu</a>, <a href="https://yushen-liu.github.io/"> Yu-Shen Liu</a>, <a href="https://h312h.github.io/">Zhizhong Han</a>
+              <br>
+              <em><b>SIGGRAPH</b></em>, 2026
+              <br>
+              <a href="https://tangjm24.github.io/VidSplat/">project page</a> | 
+              <a href="https://arxiv.org/abs/2605.11424">arXiv</a> |
+              <a href="https://github.com/tangjm24/VidSplat">code</a>
+        
+              <p align="justify", style="font-size:13px">
+                We introduce VidSplat, a training-free generative reconstruction framework that leverages video diffusion priors to iteratively synthesize novel views that compensate for missing input coverage, and thereby recover complete 3D scenes from sparse inputs.
+              </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
           <tr onmouseout="AvatarForcing_stop()" onmouseover="AvatarForcing_start()">
             <td width="28%">
               <div class="one">
@@ -812,7 +860,7 @@
                     <strong>Program Committee Member</strong>: AAAI-26
                   </li>
                   <li> 
-                    <strong>Conference Reviewer</strong>: CVPR-25/26, ICLR-25/26, NeurIPS-24/25, ICCV-25, ICML-25/26, ACMMM-25, WACV-25/26, IJCAI-24
+                    <strong>Conference Reviewer</strong>: CVPR-25/26, ICLR-25/26, NeurIPS-24/25/26, ECCV-26, ICCV-25, ICML-25/26, ACMMM-25/26, WACV-25/26, IJCAI-24
                   </li>
                   <li> 
                     <strong>Journal Reviewer</strong>: IEEE TIP, IEEE TVCG, IJCV, CAD
@@ -850,7 +898,7 @@
                 <font size="2">
                 template adapted from <a href="https://junshengzhou.github.io/"><font size="2">this awesome website</font></a>
                 <br>
-                Last updated: March 2026
+                Last updated: May 2026
                 <br>
                 
               </font>
