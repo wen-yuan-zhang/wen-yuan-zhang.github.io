@@ -114,6 +114,54 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tbody>
+          <tr onmouseout="WanStreamerv02_stop()" onmouseover="WanStreamerv02_start()">
+            <td width="28%">
+              <div class="one">
+                <div class="two" id="WanStreamerv02" style="opacity: 0;">
+                  <video width="225" muted="" autoplay="" loop="">
+                    <source src="media/WanStreamerv02_arxiv26_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="media/WanStreamerv02_arxiv26_before.png" width="225">
+        
+              </div>
+        
+              <script type="text/javascript">
+                function WanStreamerv02_start() {
+                  document.getElementById('WanStreamerv02').style.opacity = "1";
+                }
+                function WanStreamerv02_stop() {
+                  document.getElementById('WanStreamerv02').style.opacity = "0";
+                }
+                WanStreamerv02_stop()
+              </script>
+            </td>
+        
+            <td width="65%" valign="top">
+              <a href="https://wan-streamer.com/v0.2/">
+                <papertitle>Wan-Streamer v0.2: Higher Resolution, Same Latency
+                </papertitle>
+              </a >
+              <br>
+              Wan Team, Alibaba Group
+              <!-- <a href="">Lianghua Huang</a >, <a href="">Zhi-Fan Wu</a >, <a href="">Wei Wang</a >, <a href="">Yupeng Shi</a >, <a href="">Mengyang Feng</a >, <a href="">unjie He</a >, <a href="">Chen-Wei Xie</a >, <a href="">Yu Liu</a >, <a href="">Jingren Zhou</a >, <a href="">Ang Wang</a >, <a href="">Bang Zhang</a >, <a href="">Baole Ai</a >, <a href="">Chen Liang</a >, <a href="">Cheng Yu</a >, <a href="">Chongyang Zhong</a >, <a href="">Jinwei Qi, <a href="">Kai Zhu</a >, <a href="">Pandeng Li</a >, <a href="">Peng Zhang</a >, <strong>Wenyuan Zhang</strong>, <a href="">Xinhua Cheng</a >, <a href="">Yitong Huang</a >, <a href="">Yun Zheng</a >, <a href="">Yuxiang Bao, </a ><a href="">Yuzheng Wang</a >, <a href="">Zoubin Bi</a > -->
+              <br>
+              <em>Preprint. arXiv:2607.04443</em>, 2026
+              <br>
+              <a href="https://wan-streamer.com/v0.2/">project page</a > | 
+              <a href="https://arxiv.org/abs/2607.04443">arXiv</a > 
+        
+              <p align="justify", style="font-size:13px">
+                Wan-Streamer v0.2 keeps the v0.1 modeling formulation, but raises the interactive output stream from 192x336 to 640x368 while preserving approximately 200 ms model-side signal-to-signal latency at 25 FPS.
+              </p >
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody>
           <tr onmouseout="WanStreamerv01_stop()" onmouseover="WanStreamerv01_start()">
             <td width="28%">
               <div class="one">
@@ -144,7 +192,8 @@
                 </papertitle>
               </a>
               <br>
-              <a href="">Lianghua Huang</a>, <a href="">Zhi-Fan Wu</a>, <a href="">Wei Wang</a>, <a href="">Yupeng Shi</a>, <a href="">Mengyang Feng</a>, <a href="">unjie He</a>, <a href="">Chen-Wei Xie</a>, <a href="">Yu Liu</a>, <a href="">Jingren Zhou</a>, <a href="">Ang Wang</a>, <a href="">Bang Zhang</a>, <a href="">Baole Ai</a>, <a href="">Chen Liang</a>, <a href="">Cheng Yu</a>, <a href="">Chongyang Zhong</a>, <a href="">Jinwei Qi, <a href="">Kai Zhu</a>, <a href="">Pandeng Li</a>, <a href="">Peng Zhang</a>, <strong>Wenyuan Zhang</strong>, <a href="">Xinhua Cheng</a>, <a href="">Yitong Huang</a>, <a href="">Yun Zheng</a>, <a href="">Yuzheng Wang</a>, <a href="">Zoubin Bi</a>
+              Wan Team, Alibaba Group
+              <!-- <a href="">Lianghua Huang</a>, <a href="">Zhi-Fan Wu</a>, <a href="">Wei Wang</a>, <a href="">Yupeng Shi</a>, <a href="">Mengyang Feng</a>, <a href="">unjie He</a>, <a href="">Chen-Wei Xie</a>, <a href="">Yu Liu</a>, <a href="">Jingren Zhou</a>, <a href="">Ang Wang</a>, <a href="">Bang Zhang</a>, <a href="">Baole Ai</a>, <a href="">Chen Liang</a>, <a href="">Cheng Yu</a>, <a href="">Chongyang Zhong</a>, <a href="">Jinwei Qi, <a href="">Kai Zhu</a>, <a href="">Pandeng Li</a>, <a href="">Peng Zhang</a>, <strong>Wenyuan Zhang</strong>, <a href="">Xinhua Cheng</a>, <a href="">Yitong Huang</a>, <a href="">Yun Zheng</a>, <a href="">Yuzheng Wang</a>, <a href="">Zoubin Bi</a> -->
               <br>
               <em>Preprint. arXiv:2606.25041</em>, 2026
               <br>
